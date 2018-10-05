@@ -1,0 +1,54 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+a:link, a:visited {
+    color: deepskyblue;
+}
+
+a.card-footer-item:hover, a.card-footer-item:active {
+    background-color: lightblue;
+    color: hsl(0, 0%, 96%);
+    font-weight: bold;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 99 !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: skyblue;
+}
+
+.header-image {
+    background-image: url("../img/space.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+}
+
+i.fa-reverse {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+}
+
+h2.title {
+    color: deepskyblue;
+}
+
+#header {
+    color: #fff;
+}
+
+#aboutme {
+    background-color: #f5f5f5;
+}
+
+#portrait {
+    border-radius: 20px 100px;
+}
