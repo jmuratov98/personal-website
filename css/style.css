@@ -140,7 +140,8 @@ h2.title {
     box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
     color: #594F4F;
     max-width: 100%;
-    position: relative; 
+    position: relative;
+    margin-left: 15px;
 }
 
 .col-header {
@@ -158,6 +159,7 @@ h2.title {
     font-weight: 700;
     padding: 0.75rem; 
 }
+
 .col-header-title.is-centered {
     justify-content: center;
 }
