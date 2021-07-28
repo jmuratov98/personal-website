@@ -1,157 +1,259 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Customized css and js -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script type="text/javascript" src="js/core.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:300|PT+Sans" rel="stylesheet">
-        
-        <title>Joseph Muratov</title>
-    </head>
-    <body>
-        <section class="hero is-light is-fullheight header-image" id="home">
-            <div class="hero-head">
-                <nav class="navbar" role="navigation" aria-label="main navigation">
-                    <nav class="navbar-brand">
-                        <button class="button navbar-burger" data-target="navMenu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+
+    <!-- Customized css and js -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/core.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:300|PT+Sans" rel="stylesheet">
+
+    <title>Joseph Muratov</title>
+</head>
+
+<body>
+    <section class="hero is-light is-fullheight header-image" id="home">
+        <div class="hero-head">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <nav class="navbar-brand">
+                    <div class="navbar-burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </nav>
-                    <nav class="navbar-menu" id="navMenu">
-                        <nav class="navbar-end has-text-weight-bold">
-                            <a class="navbar-item" href="#home">Home</a>
-                            <a class="navbar-item" href="#aboutme">About Me</a>
-                            <a class="navbar-item" href="#myprojects">My Projects</a>
-                            <a class="navbar-item" href="#contact">Contact</a> 
-                        </nav>
+                <nav class="navbar-menu" id="navMenu">
+                    <nav class="navbar-end has-text-weight-bold">
+                        <a class="navbar-item" href="#home">Home</a>
+                        <a class="navbar-item" href="#aboutme">About Me</a>
+                        <a class="navbar-item" href="#myprojects">My Projects</a>
+                        <a class="navbar-item" href="#contact">Contact</a>
                     </nav>
                 </nav>
-            </div>
+            </nav>
+        </div>
 
-            <div class="hero-body">
-                
-            </div>
-        </section>
-        
-        <!-- About me -->
-        <section class="section" id="aboutme">
-            <div class="container">
-                <h2 class="title is-2 has-text-centered"><i class="fa fa-fighter-jet fa-reverse" aria-hidden="true"></i> About Me <i class="fa fa-fighter-jet"></i></h2>
-                <div class="columns">
-                
-                    <div class="column is-one-quater is-ofset-2">
-                        <figure class="image">
-                            <img src="img/nyc.jpg" id="portrait">
-                        </figure><br>
-                        <div class="columns has-text-centered is-mobile">
-                            <div class="column">
-                                <a href="https://github.com/jmuratov98" class="footer-links" target="_blank"><i style="color: deepskyblue" class="fa fa-github fa-2x"></i></a>
-                            </div>
-                            <div class="column">
-                                <a href="mailto:jmuratov98@gmx.com" class="footer-links"><i style="color: deepskyblue" class="fa fa-envelope-o fa-2x"></i></a>
-                            </div>
-                            <div class="column">
-                                <a href="https://c.gmx.com/@744189660166624837/7G8ep3n0SrecUyfBhK-3Ew" class="footer-links" target="_blank"><i style="color: deepskyblue" class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></a>
-                            </div>
+        <div class="hero-body">
+
+        </div>
+    </section>
+
+    <!-- About me -->
+    <section class="section" id="aboutme">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered"><i class="fa fa-fighter-jet fa-reverse" aria-hidden="true"></i>
+                About Me <i class="fa fa-fighter-jet"></i></h2>
+            <div class="columns">
+
+                <div class="column is-one-quater is-ofset-2">
+                    <figure class="image">
+                        <img src="img/nyc.jpg" id="portrait">
+                    </figure><br>
+                    <div class="columns has-text-centered is-mobile">
+                        <div class="column">
+                            <a href="https://github.com/jmuratov98" class="footer-links" target="_blank"><i
+                                    style="color: deepskyblue" class="fa fa-github fa-2x"></i></a>
                         </div>
-                    </div>
-                    
-                    <div class="column is-7">
-                        <p>Hello! Joseph here. I'm a computer engineering major at the Grove School of Engineering at City College of New York.</p>
-                        <br>
-                        <p>Growing up I was always fascinated with electronics, especially computers. I admired the hardware; what they can become. Over time I became interested in what computers can do for AI and robotics. As such I always wanted to do something along those lines.</p>
-                        <br>
-                        <p>Aside from my college assignments and side projects, I work with my family in the family buisness. As a hobbie, I enjoy playing and watching sports, such as basketball, soccer, and baseball.</p>
-                        <br>
-                        <p>You can always contact me <a href="#contact" style="color: deepskyblue">here</a>.</p>
+                        <div class="column">
+                            <a href="mailto:jmuratov98@gmx.com" class="footer-links"><i style="color: deepskyblue"
+                                    class="fa fa-envelope-o fa-2x"></i></a>
+                        </div>
+                        <div class="column">
+                            <a download="Resume" href="./docs/Resume.pdf" class="footer-links" target="_blank"><i
+                                    style="color: deepskyblue" class="fa fa-file-text-o fa-2x"
+                                    aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
+
+                <div class="column is-7">
+                    <p>Hello! Joseph here. I'm a computer engineering alumnist from the Grove School of Engineering at
+                        City
+                        College of New York.</p>
+                    <br>
+                    <p>Growing up I was always fascinated with electronics, especially computers. I admired the
+                        hardware; what they can become. Over time I became interested in what computers can do for AI
+                        and robotics. As such I always wanted to do something along those lines.</p>
+                    <br>
+                    <p>Aside from my college assignments and side projects, I work with my family in the family
+                        buisness. As a hobbie, I enjoy playing and watching sports, such as basketball, soccer, and
+                        baseball.</p>
+                    <br>
+                    <p>You can always contact me <a href="#contact" style="color: deepskyblue">here</a>.</p>
+                </div>
             </div>
-        </section>
-        
-        <section class="section" id="myprojects">
-            <div class="container">
-                <h2 class="title is-2 has-text-centered"><i class="fa fa-fighter-jet fa-reverse" aria-hidden="true"></i> Projects <i class="fa fa-fighter-jet" aria-hidden="true"></i></h2>
-                <br>
-                
-                <div class="row is-12">
-                    
-                    <div class="col">
-                        <div class="panel-thum col-md-3 hidden-sm hidden-xs">
-                            <figure class="is-5x3">
-                                <a href="https://github.com/jmuratov98/csc221-database-project" target="_blank"><img src="img/database.jpg"></a>
-                            </figure>
-                        </div>
-                        <header class="col-header">
-                            <p class="col-header-title is-centered">
-                                Database Project
-                            </p>
-                        </header>
+        </div>
+    </section>
+
+    <section class="section" id="myprojects">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered"><i class="fa fa-fighter-jet fa-reverse" aria-hidden="true"></i>
+                Projects <i class="fa fa-fighter-jet" aria-hidden="true"></i></h2>
+            <br>
+
+            <div class="grid">
+
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-5x3">
+                            <a href="https://github.com/jmuratov98/csc221-database-project" target="_blank">
+                                <img src="./img/database.jpg" alt="Database img">
+                            </a>
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                        <p class="card-header-title is-centered">
+                            Database Project
+                        </p>
+                    </header>
+                    <div class="card-content">
                         <div class="content">
-                            <p>A simple databse.</p>
-                            <a href="https://github.com/jmuratov98/csc221-database-project" target="_blank" class="button is-small is-round is-info">Soure Code</a>
+                            A project that stores employee information in database, built using: Java, JavaFX and SQL.
                         </div>
                     </div>
-                    
-                    <div class="col">
-                        <div class="panel-thum col-md-3 hidden-sm hidden-xs">
-                            <figure class="is-5x3">
-                                <a href="https://github.com/jmuratov98/Epoch" target="_blank"><img src="img/EpochLogo.png"></a>
-                            </figure>
-                        </div>
-                        <header class="col-header">
-                            <p class="col-header-title is-centered">
-                                Epoch Graphics Engine (EGE)
-                            </p>
-                        </header>
+                    <footer class="card-footer">
+                        <a href="https://github.com/jmuratov98/csc221-database-project" target="_blank" class="card-footer-item">Source Code</a>
+                    </footer>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-5x3">
+                            <a href="https://github.com/jmuratov98/Epoch" target="_blank">
+                                <img src="./img/EpochLogo.png" alt="Epoch Logo">
+                            </a>
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                        <p class="card-header-title is-centered">
+                            Epoch Graphics Engine
+                        </p>
+                    </header>
+                    <div class="card-content">
                         <div class="content">
-                            <p>A homemade powerful graphics engine.</p>
-                            <a href="https://github.com/jmuratov98/Epoch" target="_blank" class="button is-small is-round is-info">Soure Code</a>
-                            <a href="https://jmuratov98.github.io/Epoch" target="_blank" class="button is-small is-round is-info">Website</a>
+                            A cross platform graphics engine built using C++17, OpenGL, Spdlog, Dear ImGui, and others.
                         </div>
                     </div>
-                    
+                    <footer class="card-footer">
+                        <a href="https://github.com/jmuratov98/Epoch" target="_blank" class="card-footer-item">Source Code</a>
+                        <a href="https://jmuratov98.github.io/epochengine" target="_blank" class="card-footer-item">Website</a>
+                    </footer>
                 </div>
-                
-            </div>
-        </section>
-        
-        <footer class="footer" id="contact">
-            <div class="container">
-                <h2 class="title is-2 has-text-centered"><i class="fa fa-fighter-jet fa-reverse" aria-hidden="true"></i> Contact <i class="fa fa-fighter-jet" aria-hidden="true"></i></h2>
 
-                <div class="columns">
-                    
-                    <!-- Github Portfolio -->
-                    <div class="column has-text-centered">
-                        <a href="https://github.com/jmuratov98/" style="color: deepskyblue" class="footer-links" target="_blank"><i class="fa fa-github fa-4x" aria-   hidden="true"></i><br>Github</a>
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-5x3">
+                            <a href="https://github.com/jmuratov98/Drone-Sensing-Application" target="_blank">
+                                <img src="./img/drone.jpg" alt="Drone Application">
+                            </a>
+                        </figure>
                     </div>
-                    
-                    <!-- LinkedIn -->
-                    <div class="column has-text-centered">
-                        <a href="https://www.linkedin.com/in/joseph-muratov-74a6b3175/" style="color: deepskyblue" class="footer-links" target="_blank"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i><br>LinkedIn</a>
+                    <header class="card-header">
+                        <p class="card-header-title is-centered">
+                            Toxicant Sensing Drone
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            A drone that senses NO2 in the atmosphere and draws the data in our own heatmap
+                        </div>
                     </div>
-
-                    <!-- Mail -->
-                    <div class="column has-text-centered">
-                        <a href="mailto:jmuratov98@gmx.com" style="color: deepskyblue" class="footer-links"><i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i><br>jmuratov98@gmx.com</a>
-                    </div>
-
+                    <footer class="card-footer">
+                        <a href="https://github.com/jmuratov98/Drone-Sensing-Application" target="_blank" class="card-footer-item">Source Code</a>
+                      </footer>
                 </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-5x3">
+                            <a href="https://github.com/jmuratov98/MIPS-LITE-Processor" target="_blank">
+                                <img src="./img/fpga.jpg" alt="Database img">
+                            </a>
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                        <p class="card-header-title is-centered">
+                            MIPS Processor
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            A LITE version of the MIPS processor in VHDL, most if not all instructions are created.
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a hhref="https://github.com/jmuratov98/MIPS-LITE-Processor" target="_blank" class="card-footer-item">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-5x3">
+                            <a href="https://github.com/jmuratov98/Slack-Clone" target="_blank">
+                                <img src="./img/slack.png" alt="slack clone">
+                            </a>
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                        <p class="card-header-title is-centered">
+                            Slack Clone
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                           A slack clone that was built in 6 hours using React.js, Redux, and firebase
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/jmuratov98/Slack-Clone" target="_blank" class="card-footer-item">Source Code</a>
+                        <a href="#" target="_blank" class="card-footer-item">Website</a>
+                    </div>
+                </div>
+
             </div>
-        </footer>
-        
-    </body>
+
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered"><i class="fa fa-fighter-jet fa-reverse" aria-hidden="true"></i>
+                Contact <i class="fa fa-fighter-jet" aria-hidden="true"></i></h2>
+
+            <div class="columns">
+
+                <!-- Github Portfolio -->
+                <div class="column has-text-centered">
+                    <a href="https://github.com/jmuratov98/" style="color: deepskyblue" class="footer-links"
+                        target="_blank"><i class="fa fa-github fa-4x" aria- hidden="true"></i><br>Github</a>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="column has-text-centered">
+                    <a href="https://www.linkedin.com/in/joseph-muratov-74a6b3175/" style="color: deepskyblue"
+                        class="footer-links" target="_blank"><i class="fa fa-linkedin fa-4x"
+                            aria-hidden="true"></i><br>LinkedIn</a>
+                </div>
+
+                <!-- Mail -->
+                <div class="column has-text-centered">
+                    <a href="mailto:jmuratov98@gmx.com" style="color: deepskyblue" class="footer-links"><i
+                            class="fa fa-envelope-o fa-4x" aria-hidden="true"></i><br>jmuratov98@gmx.com</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
 </html>
