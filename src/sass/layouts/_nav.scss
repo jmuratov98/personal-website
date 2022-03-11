@@ -1,0 +1,26 @@
+$navbar-height: 3.5rem;
+
+.nav {
+    min-height: $navbar-height;
+    display: flex;
+    padding: 0 40px;
+
+    &__menu {
+        display: flex;
+        padding: 0;
+    }
+
+    &__center {
+        flex-grow: 1;
+        flex-basis: 1;
+        justify-content: center;
+    }
+
+    &__item {
+
+        & + & {
+            padding-left: 20px;
+        }
+    }
+
+}

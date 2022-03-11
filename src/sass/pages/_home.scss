@@ -1,0 +1,33 @@
+@use "../layouts/nav" as nav;
+
+.home {
+    &-aboutme {
+        height: calc(100vh - (2 * nav.$navbar-height));
+        // height: 100vh;
+        display: flex;
+        align-items: center;
+        margin-bottom: 3.5rem;
+
+        picture {
+            align-self: start;
+            background: #fff;
+            border: 0.5em solid #fff;
+            border-radius: 2em;
+            -webkit-box-shadow: 0 0.5em 1em rgb(0 0 0 / 15%);
+            box-shadow: 0 0.5em 1em rgb(0 0 0 / 15%);
+            grid-area: image;
+            overflow: hidden;
+
+            align-self: auto;
+            height: 100%;
+            max-height: 25rem;
+            max-width: 20rem;
+            min-width: 15rem;
+            width: 25vw;
+        }
+
+        div {
+            padding-left: .5rem;
+        }
+    }
+}

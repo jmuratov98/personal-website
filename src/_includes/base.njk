@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+	
+	{% if title %}
+		<title>Joseph Muratov &mdash; {{ title }}</title>
+	{% else %}
+		<title>Joseph Muratov</title>
+	{% endif %}
+</head>
+<body>
+	<header class="header">
+		{% include 'navigation.njk' %}
+	</header>
+
+	<main id='main-content'>
+		{{ content | safe }}
+	</main>
+
+	<footer class="footer">
+	</footer>
+
+</body>
+</html>
