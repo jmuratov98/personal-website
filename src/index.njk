@@ -3,37 +3,95 @@ layout: base.njk
 eleventyNavigation: 
     key: Home
     order: 100
+projects:
+    - img: ./assets/imgs/EpochLogo.png
+      alt: 'Epoch Graphics Engine Logo'
+      title: 'Epoch Graphics Engine (EGE)'
+      description: 'A cross platform graphics engine built using C++17, OpenGL, Spdlog, Dear ImGui, and others.'
+      buttons:
+        - href: https://github.com/jmuratov98/Epoch
+          title: Source
+        - href: './assets/downloadables/epoch.rar'
+          title: Download
+        - href: https://jmuratov98.github.io/epochengine
+          title: Website
+    - img: ./assets/imgs/drone.jpg
+      alt: 'Image of our drone'
+      title: 'Toxicant Sensing Drone'
+      description: 'A drone that senses NO2 in the atmosphere and draws the data in our own heatmap.'
+      buttons:
+        - href: https://github.com/jmuratov98/TSD
+          title: Source
+    - img: ./assets/imgs/fpga.jpg
+      alt: 'Image of the FPGA'
+      title: 'MIPS Lite'
+      description: 'A lightweight version of the MIPS architecture written in VHDL to display into an FPGA'
+      buttons:
+        - href: https://github.com/jmuratov98/MIPS-LITE-Processor
+          title: Source
+    - img: ./assets/imgs/slack.png
+      alt: 'Image of the Slack clone'
+      title: 'Slack Clone'
+      description: 'A simple clone of the Slack app written in 6 hours using react.js, redux, and firebase.'
+      buttons:
+        - href: https://github.com/jmuratov98/Slack-Clone
+          title: Source
+        - href: https://slack.josephmuratov.com
+          title: Demo
+    - img: ./assets/imgs/youtube.png
+      alt: 'Image of the YouTube clone'
+      title: 'YouTube Clone'
+      description: 'A YouTube clone (Frontend Only) written in reactjs, typescript, mobx and firebase.'
+      buttons:
+        - href: 
+          title: Source
+        - href: https://youtube.josephmuratov.com
+          title: Demo
+    
 ---
 
-<section class="section container home-aboutme">
+<section class="home-section__aboutme container">
+    <div>
         {% image "./src/assets/imgs/portfolio - Copy.jpeg", "An image of Joseph", "(min-width 15rem), 50vw, 100vw" %}
         <div>
-            <header>
+            <header class="section__header">
                 <h2 class="section__title">About Me</h2>
                 <p class="section__subtitle">Everything you need to know
             </header>
-            <p>
-                I'm a developer with a passion to learn new things and try them out.
-                Whether it's graphics, web design, or something else.
-            </p>
-            <br />
-            <p>
-                When I'm not programming or designing something. I like to play with my dog.
-                Hangout with friends and family.
-            </p>
-            <br />
-            <a href="/about">Click here to learn more</a>
+            <div class="section__content">
+                <p>
+                    I'm a developer with a passion to learn new things and try them out.
+                    Whether it's graphics, web design, or something else.
+                </p>
+                <br />
+                <p>
+                    When I'm not programming or designing something. I like to play with my dog, and
+                    hangout with friends and family.
+                </p>
+                <br />
+                <a href="/about">Click here to learn more</a>
+            </div>
         </div>
+    </div>
 </section>
 
-<section class="section">
-    section 2
-</section>
-
-<section class="section">
-    section 3
-</section>
-
-<section class="section">
-    section 4
+<section class="home-section home-section__myprojects container" aria-label="My Projects">
+    <header class="section__header">
+        <h2 class="section__title">My Projects</h2>
+        <p class="section__subtitle">Personal projects</p>
+    </header>
+    <div class="projects">
+        {% from 'project.njk' import project %}
+        {% for p in projects %}
+            {{ 
+                project(
+                    img = p.img,
+                    alt = p.alt,
+                    title = p.title,
+                    description = p.description,
+                    buttons = p.buttons
+                )
+            }}
+        {% endfor %}
+    </div>
 </section>

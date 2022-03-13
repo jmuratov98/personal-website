@@ -1,0 +1,20 @@
+{% macro project(img, alt, title, description, buttons) %}
+    <div class="card project">
+        <div class="card__image">
+            <figure class="image is-5x3">
+                <img src="{{ img }}" alt="{{ alt }}"/>
+            </figure>
+        </div>
+        <header class="card__header">
+            {{ title }}
+        </header>
+        <div class="card__body">
+            {{ description }}
+        </div>
+        <footer class="card__footer">
+            {% for btn in buttons %}
+                <a class="card__footer-item" href="{{ btn.href }}">{{ btn.title }}</a>
+            {% endfor %}
+        </footer>
+    </div>
+{% endmacro %}
